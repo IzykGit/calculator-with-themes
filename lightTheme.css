@@ -145,7 +145,7 @@ body {
 
 .buttons > * {
     height: 50px;
-    min-width: 80px;
+    width: 80px;
     border: none;
     background-color: #eae3db;
     color: hsl(60, 10%, 19%);
@@ -186,4 +186,46 @@ body {
     font-size: 20px;
 }
 
+
+
+@media screen and (max-width: 450px) {
+    .calculator {
+        width: 280px;
+    }
+
+    .buttons > * {
+        height: 40px;
+        font-size: 15px;
+        width: 45px
+    }
+
+    .reset {
+        grid-row: 5;
+        grid-column: 1 / span 2;
+        width: 100%;
+        background-color: hsl(185, 42%, 37%);
+        color: white;
+        box-shadow: 0px 2px 0px 0px hsl(185, 58%, 25%);
+        font-size: 15px;
+    }
+    
+    .del {
+        font-size: 15px;
+        font-weight: bolder;
+        color: white;
+        background-color: hsl(185, 42%, 37%);
+        box-shadow: 0px 2px 0px 0px hsl(185, 58%, 25%);
+    }
+    
+    .equal {
+        grid-row: 5;
+        grid-column: 3 / span ;
+        background-color: hsl(25, 98%, 40%);
+        color: white;
+        box-shadow: 0px 2px 0px 0px hsl(25, 99%, 27%);
+        font-size: 15px;
+        width: 100%;
+    }
+    
+}
 

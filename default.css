@@ -144,7 +144,7 @@ body {
 
 .buttons > * {
     height: 50px;
-    min-width: 80px;
+    width: 80px;
     border: none;
     background-color: #eae3db;
     color: #364153;
@@ -183,6 +183,47 @@ body {
     color: white;
     box-shadow: 0px 2px 0px 0px #8f2316;
     font-size: 20px;
+    width: 100%;
 }
 
 
+@media screen and (max-width: 450px) {
+    .calculator {
+        width: 280px;
+    }
+
+    .buttons > * {
+        height: 40px;
+        font-size: 15px;
+        width: 45px
+    }
+
+    .reset {
+        grid-row: 5;
+        grid-column: 1 / span 2;
+        width: 100%;
+        background-color: #647299;
+        color: white;
+        box-shadow: 0px 2px 0px 0px #424e74;
+        font-size: 15px;
+    }
+    
+    .del {
+        font-size: 15px;
+        font-weight: bolder;
+        color: white;
+        background-color: #647299;
+        box-shadow: 0px 2px 0px 0px #424e74;
+    }
+    
+    .equal {
+        grid-row: 5;
+        grid-column: 3 / span ;
+        background-color: #d13f30;
+        color: white;
+        box-shadow: 0px 2px 0px 0px #8f2316;
+        font-size: 15px;
+        width: 100%;
+    }
+    
+}
